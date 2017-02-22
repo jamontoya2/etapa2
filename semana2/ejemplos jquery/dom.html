@@ -1,0 +1,39 @@
+
+<html>
+<head>
+    <title>Acceso a dom</title>
+    <style type="text/css">
+       
+    </style>
+    
+</head>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).on("ready", inicio);
+        	function inicio(){
+        		//for(i=0; i < $("#container").children().length; i++){
+        			
+        			//alert($("#container").children().eq(i).attr("id"));
+
+        			alert($("#contenido").children().eq(1).text());
+	
+        		}
+
+        	//alert($("#contenido").parent().attr("id"));
+        	//alert($("h1").parent().attr("id"));
+
+    </script>
+<body>
+	  <div id="container">
+			<h1 id="titulo">uso de arreglos y dom</h1>
+				<div id="contenido">
+					<div id="seccion 1"></div>
+					<p>
+						soy un parrafo <br />
+						yo soy un salto de linea
+					</p>
+			 </div>
+		</div>
+</body>
+</html>

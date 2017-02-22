@@ -1,0 +1,46 @@
+<h1>Estadisticas del Usuario</h1>
+
+<link rel = "stylesheet" type = "text/css" href="./public/css/application.css">
+
+<body>
+<form>
+<P><%=@user.name%></P>
+<!-- <P><%=@user.id%></P>
+ -->
+<br>
+	<a href ="/menu/<%=@user.id%>">ir a Maraton</a>
+    <a href ="/logout">Cerrar Sesion</a>
+<br>    
+<table align= "center" style="margin: 0px auto;">
+	<tr> 
+		<th>N. Round</th>
+		<th>Theme</th>
+		<th>created</th>
+		<th>good</th>
+		<th>fail</th>
+   </tr>
+	 	 <tr>
+		  <%@guess.each do |guess| %>
+			<td><%= guess.round_id%></td>
+			 <%@deck_round.each do |deck|%>
+                <%if guess.round_id == deck.round_id%> 
+			      <%deck.deck_id %></td>
+			        <%@deck.each do |deck_dos|%>
+                       <% if deck.deck_id == deck_dos.id %>
+                         <td><%=deck_dos.theme%>
+                       <%end%>
+                    <%end%>       
+			    <%end%>
+			 <%end%>     
+			<td><%= guess.created_at%></td>
+			<td><%= guess.tries_good%></td>
+			<td><%= guess.tries_fail%></td>
+	     </tr>
+       <% end %> 
+</table>
+</form>
+</body>
+
+
+  	
+  

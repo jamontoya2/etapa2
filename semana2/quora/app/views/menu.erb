@@ -1,0 +1,36 @@
+<h1>Bienvenido a Quora</h1>
+<div class="static">
+<p>User:<%=current_user.name%></p>
+
+	<a href="/show/questions/user/<%=current_user.id%>" class="myButton_menu">Mis Preguntas</a>
+	<a href="/show/answers/user/<%=current_user.id%>" class="myButton_menu">Mis Respuestas</a>
+	<a href="/update" class="myButton_menu">Actualizar Mis datos</a></a>
+	<a href="/logout" class="myButton_menu">Log Out</a>
+	<form id="menu_preg" action='/ask/question' method="get" >
+		<input class="search" type="text" name="txt_question" placeholder="Make a question"><input type="submit" name="btn_question" value="Ask Question" class="myButton_menu">
+	</form>
+</div>
+
+
+<%if @questions%>	
+	<%@questions.each_with_index do |item, index| %>
+		<fieldset>
+			<p><a href="/show/questions/<%=item.id%>"><%=item.question%></a></p>
+	  		<form action ='/answer/short' method="post"> 
+					<input type="hidden" name="question_id" value="<%=item.id%>">
+	  			<textarea rows="3" cols="50" name="text_answer"></textarea><br><br>
+	  			<input type="submit" name="text_name" value="Respond">
+				</form>	
+				<form class="form_vote" action ='/count/question/votes' method="post"> 
+					<input type="hidden" name="question_id" value="<%=item.id%>">	
+	  			Me gusta<button class="myButton_menu" id="btn_vote<%=item.id%>" type="submit" name="btn_vote" value="%=item.questionvotes.length%"><%=item.questionvotes.length%></input>
+ 				</form>
+		</fieldset>
+		<br>
+	<%end%>
+<%end%>
+
+
+
+
+

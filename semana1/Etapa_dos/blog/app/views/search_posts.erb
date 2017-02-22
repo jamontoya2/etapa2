@@ -1,0 +1,32 @@
+<h1>blog anonimo</h1>
+<link rel = "stylesheet" type = "text/css" href="./public/css/application.css">
+
+<form action = "/posts/search" method = "post" id="search">
+  <div>	
+    <label for="title">Post</label>
+  	<input id = "post_tag" name = "title" type ="text" />
+  </div>
+  <button type ="submit" class = "btn-sucess">Submit</button>
+
+<%if @post %>
+	<% if @post == nil %>
+			<a>Sorry we could not find any <%=@message%></a>
+	<% else %>
+			<p>Your search for <%=@message%>:</p>
+			<p>_______________________________________________________________</p>
+  		<%@post.each do |item|%>
+  	 		<p><a><%=item.title%></a></p>
+     		<p><a><%=item.body%></a></p>
+    	<p>_________________________________________________________________</p>
+  		<%end%>
+	<% end %>
+<% end %>
+</form>
+<br>
+<a href ="/">Regresar al menu</a>
+
+
+
+
+
+

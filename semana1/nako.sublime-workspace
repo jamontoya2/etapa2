@@ -1,0 +1,279 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"array",
+				"array_contener"
+			],
+			[
+				"new",
+				"new"
+			],
+			[
+				"method",
+				"method_make_csv"
+			],
+			[
+				"ma",
+				"Make_File_Csv"
+			],
+			[
+				"me",
+				"method_read_csv"
+			],
+			[
+				"arra",
+				"array_contener"
+			],
+			[
+				"cr",
+				"created_at"
+			],
+			[
+				"la",
+				"last_name"
+			],
+			[
+				"phone",
+				"phone"
+			],
+			[
+				"ph",
+				"phone"
+			],
+			[
+				"pho",
+				"phone_number"
+			],
+			[
+				"ti",
+				"time_cook"
+			],
+			[
+				"st",
+				"stop_clock"
+			],
+			[
+				"time",
+				"time_cock"
+			],
+			[
+				"tim",
+				"time"
+			],
+			[
+				"nu",
+				"number_of_gears"
+			],
+			[
+				"num",
+				"number_of_gears"
+			],
+			[
+				"whe",
+				"wheels"
+			],
+			[
+				"ta",
+				"tank_size"
+			],
+			[
+				"color",
+				"tColor"
+			],
+			[
+				"re",
+				"refuel"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"res",
+				"respond_to"
+			],
+			[
+				"ve",
+				"vehicle"
+			],
+			[
+				"Moto",
+				"Motorized"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/macbookair/Desktop/toya/torteria.rb",
+		"/Users/macbookair/Desktop/toya/ejemplo_csv.rb",
+		"/Users/macbookair/Desktop/toya/csv.rb",
+		"/Users/macbookair/Desktop/toya/pato.rb",
+		"/Users/macbookair/Desktop/ejemplo_csv.rb",
+		"/Users/macbookair/Desktop/inheritance: es una relacion entre dos clases, los",
+		"/Users/macbookair/Desktop/argument.rb",
+		"/Users/macbookair/Desktop/torteria.rb",
+		"/Users/macbookair/Desktop/person.rb",
+		"/Users/macbookair/Desktop/coolest.rb",
+		"/Users/macbookair/Desktop/sodu.rb",
+		"/Users/macbookair/Desktop/hola.rb"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"person",
+			"person_writer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "nako.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 3
+	}
+}

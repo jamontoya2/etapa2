@@ -1,0 +1,31 @@
+<h1>blog anonimo</h1>
+
+<link rel = "stylesheet" type = "text/css" href="./public/css/application.css">
+
+<body>
+<form>
+	<a href ="/post">Agregar POST</a>
+    <a href ="/post/search">Buscar POST</a>
+    <a href ="/tags">Buscar TAG</a>
+<br>    
+<table>
+<thead>
+	<tr> 
+		<th>TITLE</th>
+		<th></th>
+		<th></th>
+		<th></th>
+</tr>
+</thead>
+	<% @posts.each do |post| %>
+		<tr>
+			<td><%= post.title %></td>
+			<td><a href="/posts/<%= post.id %>"><%= "Show"%></a><td>
+			<td><a href="/posts/edit/<%= post.id %>"><%= "Edit"%></a><td>
+      <td><a href="/posts/delete/<%= post.id %>"><%= "Delete"%></a><td>
+    </td>
+  <% end %>
+</table>
+</form>
+
+</body>

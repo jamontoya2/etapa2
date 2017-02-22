@@ -1,0 +1,24 @@
+<h1>Blog Anonimo</h1>
+
+<form>
+  <% if @post %>
+	 <p><label>Title: </label><%= "#{@post.title}" %></p>
+  <p><label>body: </label><%= "#{@post.body}" %></p>
+<% else %>
+	<p><label>Mensaje</label>no se encontro informacion</p>
+<% end %>
+
+<% if @tags %>
+  <p><label>Tags: </label></p>
+  <% @tags.each do |item| %>
+  	<lu>
+  		<li><%= item.name %></li>
+  	</lu>	 	
+  <% end %>
+<% else %>
+   <p><label>Mensaje:</label>no se encontro informacion</p>
+<% end %>  	
+<br>
+</form>
+ <a href ="/">Regresar al menu</a>
+

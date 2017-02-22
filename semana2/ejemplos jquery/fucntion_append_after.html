@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+
+function appendText() {
+	var txt1 = "<p>Text.</p>";
+	var txt2 = $("<p></p>").text("Text.");
+	var txt3 = document.createElement("p");
+	txt3.innerHTML = "Text.";
+	$("body").append(txt1, txt2, txt3);
+}	
+
+function afterText(){
+	var txt1 = "<b>I </b>";
+	var txt2 = $("<i></i>").text("love ");
+	var txt3 = document.createElement("b");
+	txt3.innerHTML = "jQuery!";
+	$("img").after(txt1, txt2, txt3);
+}
+</script>
+<style>
+</style>	
+</head>
+<body>
+
+	<p>this is a paragraph.</p>
+	<button onclick="appendText()">Append text</button><br><br>
+
+	<img src="pic.jpg" alt="jQuery" width="100" height="140">
+	<p>Click the button to insert after the image.</p>
+	<button onclick="afterText()">Insert after</button>
+
+</body>
+</html>
+
+
+
+
+

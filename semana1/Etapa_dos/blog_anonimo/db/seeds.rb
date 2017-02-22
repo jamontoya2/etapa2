@@ -1,0 +1,11 @@
+post =  Post.create(title: "armando", body: "montoya")
+post1 = Post.create(title: "yolanda", body: "garcia")
+post2 = Post.create(title: "elisa", body: "gonzalez")
+post3 = Post.create(title: "katia", body: "martinez")
+post4 = Post.create(title: "hola", body: "como estas")
+
+tag = Tag.create(name: "barrer")
+tag1 = Tag.create(name: "limpiar")
+tag2 = Tag.create(name: "cocinar")
+tag3 = Tag.create(name: "beber")
+tag4 = Tag.create(name: "volar")

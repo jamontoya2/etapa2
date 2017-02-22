@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/application.css">
+    
+</head>
+ 
+<body>
+ 
+    <div id="registrar">
+<a href="/"</a>Registrarse</a>
+</div> <!-- fin opcion-->
+ 
+    <div id="envoltura">
+        <div id="contenedor">
+ 
+            <!-- <div id="cabecera" >
+                <img src="./css/images/logotipo.jpg">
+            </div>
+             --><div id="cuerpo">
+                <form id="form-login" action="/login" method="post" autocomplete="off">
+                    <p><label >Email:</label></p>
+                        <input name="user_mail" type="text" id="usuario" placeholder="Ingresa Usuario" autofocus="" required=""></p>
+ 
+                    <p><label>Contraseña:</label></p>
+                        <input name="user_password" type="password" id="contrasenia" placeholder="Ingresa Password" required=""></p>
+ 
+                    <p id="bot"><input type="submit" id="submit" name="submit" value="Ingresar" class="boton"></p>
+                </form>
+            </div><!--fin cuerpo-->
+ 
+            <div id="pie">
+              <%if @error %>
+                <%="los datos son incorrectos, vuelve a intentarlo" %>
+              <% end %>
+          </div>
+        </div><!-- fin contenedor -->
+    </div><!--fin envoltura-->
+</body>
+ 
+</html>
+
+           
+  

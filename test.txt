@@ -1,5 +1,0 @@
-dan	34	2548	muy rico
-maria	43	5954	delicioso
-carlos	56	4352	ceveza fria
-juan	78	6542	comida excelnte
-jorge	45	897	la mejor

@@ -1,0 +1,31 @@
+<h1>Bienvenido</h1>
+<H3>Registro de usuarios</h3>
+
+<div id="registrar">
+  <a href="/"</a>Menu Principal</a>
+</div>
+
+<div id="cuerpo">
+ <form id="Form-signup" action="/signup" method="post" autocomplete="off">
+    <p><label>Nombre:</label></p><input name="name" type="text" id="usuario" placeholder="introduce tu nombre"></p>
+    <p><label>Emaisl:</label></p><input name="email" type="text" id="correo" placeholder="Introduce tu Email"></p>
+    <p><label>Password:</label></p><input name="password" type="text" id="correo" placeholder="*************"></p>
+    <p><input type="submit" name="submit" value = "ingresar" class="boton"></p>
+  </form>
+</div>
+
+  <div id="mensaje">
+    <% if @user %>
+      <% if @user.errors.any? %>
+        <% @user.errors.full_messages.each do |messages| %>
+      	  <li>
+      	    <%= messages %>
+      	  </li>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+
+
+
+    

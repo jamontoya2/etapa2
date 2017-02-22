@@ -1,0 +1,13 @@
+<h1>Find Anagrams!</h1>
+<% if @new_word %>
+   <p>Estos son anagramas para '<%= @new_word %>':</p>
+
+   <% @canon.each_with_index do |item, index| %>
+   <p><%= item.word %></p>
+   
+
+   <% end %>
+
+  <% end %>
+
+

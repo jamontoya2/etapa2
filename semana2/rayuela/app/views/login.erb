@@ -1,0 +1,16 @@
+<h1>Bienvenido</h1>
+<h3>log in</h3>
+
+<div id="cuerpo">
+ <form id="Form-signup" action= "/play" method="get" autocomplete="off">
+    <p><label>Player One:</label></p><input name="player1" type="text" autocomplete="off" ></p>
+    <p><label>Player Two:</label></p><input name="player2" type="text" autocomplete="off"></p>
+    <p><input type="submit" name="submit" value = "ingresar"></p>
+  </form>
+</div>
+
+<div id="mensaje">
+  <%if @error %>
+    <%= "los datos son incorrectos, vuelve a intentarlo" %>
+  <% end %>
+</div>

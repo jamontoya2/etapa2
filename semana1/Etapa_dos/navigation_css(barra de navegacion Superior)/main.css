@@ -1,0 +1,37 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #CCC;
+  overflow: hidden;
+
+}
+nav ul{
+ list-style: none;
+}
+
+nav ul li{
+  float:left
+}
+
+nav ul li a{
+  padding: 10px 60px;
+  color:#fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer{
+ padding:40px 0px;
+}

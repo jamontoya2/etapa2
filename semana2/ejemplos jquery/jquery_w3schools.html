@@ -1,0 +1,53 @@
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("p").on({
+            mouseenter: function(){
+              $(this).css("background-color", "lightgray");    
+            },
+            mouseleave: function(){
+              $(this).css("background-color", "lightblue");
+            },
+            click: function(){
+              $(this).css("background-color", "yellow");
+            }  
+
+          });      
+
+          // $("input").focus(function(){
+          //   $(this).css("background-color", "#ffffff");
+          // });
+          //   // $("input").blur(function(){
+            //   $(this).css("background-color", "#ffffff");        
+            // });
+          
+
+            // $("#p1").hover(function(){
+            //     alert("you entered p1");
+            // },
+            // function(){
+            //     alert ("you leave p1");
+            // });
+
+        //   $("p").dblclick(function(){
+        //     $(this).hide();
+        //   });
+       });
+
+    
+    </script>
+</head>
+<body>
+    
+    Name:<input type = "text" name= "fullname"><br>
+    Email:<input type = "text" name="email"><br>
+
+    <p>Iy you click on me, i will desssaper.</p>
+    <p>click me away</p>
+    <p>click me too! </p>
+
+
+</body>
+</html>

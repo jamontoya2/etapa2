@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'  #sinatra framework
+gem 'activerecord'  #active record ORM
+gem 'sinatra-activerecord' #Extends Sinatra with methods and Rake tasks
+gem 'sqlite3' #Sqlite Database
+gem 'rake' #execute tasks ans dependencies

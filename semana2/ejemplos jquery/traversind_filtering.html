@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//$("div p").first().css("background-color", "yellow");
+		//$("div p").last().css("background-color", "yellow");
+		//$("p").eq(5).css("background-color", "yellow");
+		//$("p").filter(".intro").css("background-color", "yellow");
+			$("p").not(".intro").css("background-color", "yellow");
+	});
+</script>
+<style>
+
+</style>	
+</head>
+<body>
+	<h1>welcome to my home page</h1>
+	<p>this is the first paragraph in body</p>
+
+	<div style="border: 1px solid black">
+		<p class="intro">this is the first paragraph in a div</p>
+		<p>this is the last paragraph in a div</p>
+  </div><br>
+
+  <div style="border: 1px solid black">
+		<p>this is the first paragraph in another div</p>
+		<p>this is the last paragraph in another div</p>
+  </div>
+
+  <p class="intro">this is the last paragraph in body</p>
+</body>
+</html>

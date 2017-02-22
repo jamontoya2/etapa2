@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="/public/css/application.css" rel="stylesheet" />
+</head>
+ 
+<body>
+ 
+<div id="registrar">
+<a href="/"</a>Menu Principal</a>
+</div> <!-- fin opcion-->
+ --> 
+    <div id="envoltura">
+        <div id="contenedor">
+        <!-- <div id="cabecera" >
+                <img src="./css/images/logo.gif">
+            </div>
+  -->
+            <div id="cuerpo">
+                <form id="form-login" action="/signup" method="post" autocomplete="off">
+                    <p><label >Name:</label></p>
+                        <input name="user_name" type="text" id="usuario" placeholder="Ingresa Nombre Usuario" autofocus="" required=""></p>
+ 
+                    <p><label >Email:</label></p>
+                        <input name="user_email" type="text" id="usuario" placeholder="Ingresa Email" autofocus="" required=""></p>
+                    <p><label>Password:</label></p>
+                        <input name="user_password" type="password" id="contrasenia" placeholder="Ingresa Password" required=""></p >
+ 
+                    <p id="bot"><input type="submit" id="submit" name="submit" value="Ingresar" class="boton"></p>
+                </form>
+            </div><!--fin cuerpo-->
+ 
+            <div id="pie" font.size=12>
+              <%if @user %>
+                <% if @user.errors.any? %> 
+                  <% @user.errors.full_messages.each do |messages| %>
+                    <li>
+                      <%= messages %>
+                    </li>
+                  <% end %>
+                <% end %>
+              <% end %>  
+            </div>
+        </div><!-- fin contenedor -->
+    </div><!--fin envoltura-->
+</body>
+ 
+</html>  
+
+
+
+
+
+
+
+
+
+
+  

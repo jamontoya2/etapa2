@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			alert("Text: " +$("#test").text());		
+		});
+		$("#btn2").click(function(){
+			alert("HTML: "+$("#test").html());
+		});
+		$("#push").click(function(){
+			alert("Value:" +$("#testt").val());
+		});
+		$("#show").click(function(){
+			alert($("#w3s").attr("href"));
+		});
+	});
+</script>
+<style>
+</style>	
+</head>
+<body>
+	<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+	<button id="btn1">Show text</button>
+	<button id="btn2">Swhow HTML</button><br><br>
+	
+	<p>Name:<input type="text" id="testt" value="Mickey Mouse"></p>
+	<button id="push">Show value</button><br><br>
+
+	<p><a href="http://www.w3schools.com" id="w3s">W3schools.com</a></p>
+	<button id="show">Show Href Value</button>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<h1>blog anonimo</h1>
+
+<link rel = "stylesheet" type = "text/css" href="./public/css/application.css">
+
+<%if @post %>
+  <% if @post.errors.any? %>
+  	<% @post.errors.full_messages.each do |messages| %>
+    	<li>
+      	<%= messages %>
+    	</li>
+  	<% end %>
+	<% end %>
+<% end %>
+<form action ='/posts' method="post">
+  <div>
+  	<label for="title">Title Post:</label>
+  	<input type ="text" id="title" name = "title">
+  </div>
+  
+  <div>
+  	<label for="tag">Post Tag:</label>
+  	<input type ="text" id="tags" name = "tags">
+  </div>
+  
+  <div>
+    <label for="body">Body Post:</label>
+  	<textarea id="body" name="body"></textarea>
+  </div>
+
+  <div class="button">
+    <button type="submit">Aceptar</button> 
+  </div>
+</form>
+  
+
+

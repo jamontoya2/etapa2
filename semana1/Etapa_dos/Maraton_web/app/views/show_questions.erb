@@ -1,0 +1,20 @@
+<h1>Maraton web<h1>
+
+<form action = "/play/<%=@round_deck.id %>" method="post">
+  <input type="hidden" name="user_id" value=<%=@round.user_id%>
+	<%@card.each_with_index do |card, index| %>
+		<p><a><%=index + 1 %>.- <%= card.question %></p></a>
+			<% @answer.each do |ans| %>
+				<%if ans.id == card.answer_id %>
+						<fieldset>
+						<input type="radio"  name="card[<%= card.id%>]" value="<%=ans.answer_one%>"><%=ans.answer_one%><br>
+						<input type="radio"  name="card[<%= card.id%>]" value="<%=ans.answer_two%>"><%=ans.answer_two%><br>
+						<input type="radio"  name="card[<%= card.id%>]" value="<%=ans.answer_three%>"><%=ans.answer_three%><br>
+	 				</fieldset>	
+    		<%end%>	
+		<%end%>	
+	<%end %>	   
+<button type ="submit">Submit</button>
+</form>
+
+

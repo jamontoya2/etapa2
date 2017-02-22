@@ -1,0 +1,47 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+nav {
+	float:right;
+	width: 150px;
+	height:506px;
+	font-size: 20px;
+    text-align: center;
+    background-color: #CCC;
+}
+nav ul{
+ margin:20px 40px 0 0;
+ list-style: none;
+}
+
+nav ul li a{
+  display: block;	
+  color:#fff;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.content{
+  margin-right: : 160px;
+
+}
+
+.footer{
+  border-top-style:solid;
+  clear:both;
+  padding: 20px 0px;
+
+}

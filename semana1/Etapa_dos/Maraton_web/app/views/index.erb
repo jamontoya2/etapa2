@@ -1,0 +1,9 @@
+ <h1>Bienvenido a Maraton</h1>
+<form action = "/deck/send" method="get">
+<p><label>1.- Matematicas</label></p> 
+<p><label>2.- Historia Universa</label></p> 
+<p><label>3.- Ciencia y Tecnologia</label></p> 
+<p><label>Choose one option:</label></p><input type = "password" name="id_deck">
+<input type="hidden" name="user_id" value=<%=@user.id%>
+<p><input type="submit" name="submit" value = "ingresar" class="boton"></p>
+</form>

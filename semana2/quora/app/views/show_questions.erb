@@ -1,0 +1,17 @@
+<%if @quest%>
+	<p><%=@quest.question%><
+	<%@answ.each_with_index do |item, index| %>
+		<fieldset>	
+			<p><%=item.answer%></p>
+			<form class="form_vote_ans" action ='/count/answer/votes' method="post"> 
+				<input type="hidden" name="answer_id" value="<%=item.id%>">
+	  		<button class="myButton_menu" id="btn_vote<%=item.id%>" type="submit" name="btn_vote" value="%=item.answervotes.length%"><%=item.answervotes.length%>
+			</form>		 
+		</fieldset>
+	<%end%>
+	<form action ='/answer/long' method="post"> 
+		<input type="hidden" name="question_id" value="<%=@quest.id%>">
+	  		<textarea rows="3" cols="50" name="text_answer"></textarea>
+	  		<input type="submit" name="text_name" value="Respond" >
+			</form>				
+<%end%>	

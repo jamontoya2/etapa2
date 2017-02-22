@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("span").parents("ul").css({"color":"red", "border": "2px solid red"});		
+	});
+</script>
+<style>
+
+</style>	
+</head>
+<body>
+
+	<div class="ancestors">
+		<div style="width:500px;">
+			<ul>
+				<li>
+					<span>span</span>
+				</li>
+			</ul>
+		</div>
+
+	<div style="width:500px;">
+		<p>
+			<span>span</span>
+		</p>
+	</div>
+</div>
+
+</body>
+</html>

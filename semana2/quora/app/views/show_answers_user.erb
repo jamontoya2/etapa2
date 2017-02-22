@@ -1,0 +1,14 @@
+<h1>Mis Respuestas</h1>
+<%if@answ%>
+	<%@answ.each_with_index do |item_answ, index| %>
+		<fieldset>	
+			<legend><%=item_answ.answer%></legend>
+				<%@quest.each_with_index do |item_quest, index| %>
+					<% if item_quest.id == item_answ.question_id %>
+						<%=item_quest.question%>
+						<br>			 
+					<%end%>
+				<%end%>	
+		</fieldset>
+	<%end%>				
+<%end%>	

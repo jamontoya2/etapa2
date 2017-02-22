@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Acceso a dom</title>
+    <style type="text/css">
+       
+    </style>
+    
+</head>
+
+<body>
+    <form name="formulario">
+    <input type="text" name="elem" id="idelem" value="Value del elemento">
+</form>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          
+          var division = $("<div></div>");
+          division.html('ESTO ES UN CUADRO DE DIALOGO...<a href="#" id="enlacecerrar">Aceptar</a>'); 
+          division.css({
+            border: "2px solid #ddd",
+            width: "300px",
+            height: "50 px",
+            posotion: "fixed",
+            top: "50%",
+            left: "40%",
+            background: "#ccc",
+            padding: "5px"
+          });
+          division.appendTo("body");    
+          $("#enlacecerrar").on("click", function(){
+              division.fadeOut(3000, function(){
+              division.remove();
+            });
+          });  
+
+
+
+            // alert(window.document.formulario.elem.value); 
+            // alert(docimento.getElementById('idelem').value)
+            //alert($("#idelem").val());
+            //alert($("[name == idelem]").val());           
+        });
+    </script>
+</body>
+</html>

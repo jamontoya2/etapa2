@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//$("div").children().css({"color":"red", "border":"2px solid red"});
+		//$("div").children("p.first").css({"color":"red", "border":"2px solid red"});
+	  $("div").find("span").css({"color":"red", "border": "2px solid red"});
+	});
+</script>
+<style>
+
+</style>	
+</head>
+<body>
+	<div class="descendants" style="width:500px;"> 
+		<p class= "first">
+			<span>spand (grandchild)</span>
+		</p>
+		<p class ="second">
+			<span>spand (gramdchild)</span>
+		</p>
+	</div>
+</body>
+</html>

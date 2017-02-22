@@ -1,0 +1,32 @@
+<h1>Bienvenido a Quora</h1>
+
+<div class="errors">
+  <%if @user %>
+    <% if @user.errors.any? %> 
+      <% @user.errors.full_messages.each do |messages| %>
+        <li>
+          <%= messages %>
+        </li>
+      <%end%>
+    <%end%>
+  <%end%>  
+</div>
+
+<div id="cuerpo">
+  <form id="form-login" action="/signup" method="post" autocomplete="off">
+    <p>Name:<input name="user_name" type="text" placeholder="Ingresa Nombre Usuario"><p>
+    <p>Email:<input name="user_email" type="text" id="usuario" placeholder="Ingresa Email"></p>
+    <p>Password:<input name="user_password" type="password" id="contrasenia" placeholder="Ingresa Password"></p >
+    <input type="submit" class="submit" name="submit" value="Ingresar" class="boton">
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+  

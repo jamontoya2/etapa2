@@ -1,0 +1,57 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("#test1").text("hello world");			
+		});
+		$("#btn2").click(function(){
+			$("#test2").html("<b>Hello world!</b>");
+		});
+		$("#btn3").click(function(){
+			$("#test").val("Dolly Duck");
+		});
+	
+		$("#btn4").click(function(){
+			$("#test4").text(function(i, originText){
+				return "Old text: " + originText + "New text: Hello world! (index:  " + i + " )";	
+			});
+		});
+		$("#btn5").click(function(){
+			$("#test5").html(function(i, originText){
+				return "Old html: " + originText + "new html : hello <b>world</b> (index: "+ i + ")";
+			});
+		});
+	
+		$("#change").click(function(){
+			$("#w3s").attr ({
+				"href": "http://www.google.com",
+				"title": "Google"			
+			});
+		});
+ 	});
+
+</script>
+<style>
+</style>	
+</head>
+<body>
+	<p id="test1">This is a Paragraph.</p>
+	<p id="test2">This is an other parafraph.</p>
+	<p>input field: <input type="text" id="test" value="Myckey Mouse"></p>
+	<button id="btn1">Set Text</button>
+	<button id="btn2">Set HTML</button>
+	<button id="btn3">Set Value</button><br><br>
+
+  <p id="test4">This is a <b>bold</b> paragraph.</p>
+	<p id="test5">This is another <b>bold</b> parafraph.</p>
+	<button id="btn4">Show Old/New Text</button>
+	<button id="btn5">Show Old/new HTML</button><br><br>
+
+	<p><a href="http://www.w3schools.com" title="some title" id="w3s">W3schools.com</a></p>
+	<button id="change">Change href Value</button>
+	<p>Mouse over the link (or click on it) to see that the value of the href attibute has change</p>
+
+</body>
+</html>

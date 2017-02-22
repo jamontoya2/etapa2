@@ -1,0 +1,21 @@
+<h1>Bienvenido</h1>
+<h3>log in</h3>
+
+<div id="registrar">
+  <a href="/"</a>Menu Principal</a>
+</div>
+
+<div id="cuerpo">
+ <form id="Form-signup" action= "/login" method="post" autocomplete="off">
+    <p><label>Email:</label></p><input name="email" type="text" id="usuario" placeholder="introduce tu nombre"></p>
+    <p><label>Password:</label></p><input name="password" type="text id="pass" placeholder="*************"></p>
+    <p><input type="submit" name="submit" value = "ingresar" class="boton"></p>
+  </form>
+</div>
+
+<div id="mensaje">
+  <%if @error %>
+    <%= "los datos son incorrectos, vuelve a intentarlo" %>
+  <% end %>
+</div>
+
