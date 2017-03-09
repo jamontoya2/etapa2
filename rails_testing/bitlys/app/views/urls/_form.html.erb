@@ -1,0 +1,24 @@
+<h1>Bitly</h1>
+
+<%= form_for @url do |f| %>
+	<% if @url.errors.any? %>
+		<div id="error explanation" %>
+			<h2>
+				<%= pluralize(@url.errors.count, "error") %>Han impedido que la Url se ha Grabada:
+			</h2>
+			<ul>
+				<% @url.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<%end %>
+	<p>
+		<%= f.label :original %>
+		<%= f.text_field :original %>
+	</p>
+	
+	<p>
+	<%= f.submit 'Create Url' %>
+	</p>
+<%end%> 
